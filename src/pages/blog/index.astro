@@ -1,0 +1,19 @@
+---
+import { blogPosts } from "~/content/content";
+import BaseLayout from "~/layouts/BaseLayout.astro";
+---
+
+<BaseLayout>
+  <span> <a href="/">bkh.kz</a> / <a href="/blog">blog</a> /</span>
+  <main>
+    <ul>
+      {
+        blogPosts.map((post) => (
+          <li class="list-decimal">
+            <a href={post.slug}>{post.data.title}</a>
+          </li>
+        ))
+      }
+    </ul>
+  </main>
+</BaseLayout>

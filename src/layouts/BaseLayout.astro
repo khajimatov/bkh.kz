@@ -1,0 +1,26 @@
+---
+import "@fontsource/geist-mono";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Bkh</title>
+  </head>
+  <body
+    class="mx-auto mt-[3%] flex max-w-screen-sm flex-col gap-y-5 text-balance p-6 pt-0 font-mono text-sm text-neutral-950 selection:bg-neutral-950 selection:text-neutral-100"
+  >
+    <slot />
+  </body>
+</html>
+
+<style is:global>
+  a {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+  }
+  li {
+    list-style: circle;
+  }
+</style>

@@ -1,70 +1,61 @@
 ---
-import "@fontsource/geist-mono";
+import BaseLayout from "~/layouts/BaseLayout.astro";
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Bkh</title>
-  </head>
-  <body
-    class="mx-auto mt-[3%] flex max-w-screen-sm flex-col gap-y-5 text-balance p-6 pt-0 font-mono text-sm text-neutral-950 selection:bg-neutral-950 selection:text-neutral-100"
-  >
-    <div>
-      <h1>Bkh</h1>
-      <p>Web Engineer</p>
-    </div>
-    <div>
-      <h2>About me</h2>
-      <ul>
-        <li>Based in Almaty, Kazakhstan</li>
-        <li>I like building things,<br />tackling different challenges</li>
-        <li>I enjoy exploring new things about<br />techlogies, innovations in web</li>
-        <li>Interested in bringing value through<br />crafting beautiful interfaces, experiences</li>
-      </ul>
-    </div>
-    <div>
-      <h2>Projects</h2>
-      <ul class="flex flex-col gap-y-2">
-        <li>
-          <a href="https://personaai.vercel.app/" class="w-fit">Persóna</a>
-          <p>
-            Persóna was created during the
-            <a
-              href="https://satbayev.university/en/news/almost-a-secret-gathering-of-programmers-nfactorial-ai-cup-2023-was-held-at-satbayev-university"
-              >nFactorial AI Cup.</a
-            >
-            nFactorial AI Cup was a generative AI hackathon for developers, which took place from April 7 to 9, 2023. I participated
-            in the App track, the goal was to create an app in 48 hours using any available generative AI.
-          </p>
-        </li>
-        <li>
-          <a href="https://nefisfood.kz/en/" class="w-fit">Nefis Food</a><p>
-            Nefis Food is a company founded by my relatives that makes sugar, coffee and other products. They needed a
-            digital presence for their brand in the form of a website, and I helped them with that.
-          </p>
-        </li>
-      </ul>
-    </div>
-    <div>
-      <h2>Now</h2>
-      <p class="pl-6">
-        Currently, I work as a frontend developer at <a href="https://globerce.capital/en">Globerce Capital</a>, <br /> in
-        a team where we build a delivery management system <br /> for any business.
-      </p>
-    </div>
-    <div>
-      <h2>Contact</h2>
-      <ul>
-        <li><a href="https://twitter.com/khajimatov">Twitter</a></li>
-        <li><a href="https://github.com/khajimatov">GitHub</a></li>
-        <li><a href="https://read.cv/bkh">Read.cv</a></li>
-        <li><a href="mailto:me@bkh.kz">Email</a></li>
-      </ul>
-    </div>
-  </body>
-</html>
+<BaseLayout>
+  <div>
+    <h1>Bkh</h1>
+    <p>Web Engineer</p>
+  </div>
+  <div>
+    <h2>About me</h2>
+    <ul>
+      <li>Based in Almaty, Kazakhstan</li>
+      <li>I like building things,<br />tackling different challenges</li>
+      <li>I enjoy exploring new things about<br />techlogies, innovations in web</li>
+      <li>Interested in bringing value through<br />crafting beautiful interfaces, experiences</li>
+    </ul>
+  </div>
+  <div>
+    <h2>Projects</h2>
+    <ul class="flex flex-col gap-y-2">
+      <li>
+        <a href="blog/persona" class="w-fit">Persóna</a>
+        <p>
+          Persóna was created during the
+          <a
+            href="https://satbayev.university/en/news/almost-a-secret-gathering-of-programmers-nfactorial-ai-cup-2023-was-held-at-satbayev-university"
+            >nFactorial AI Cup.</a
+          >
+          nFactorial AI Cup was a generative AI hackathon for developers, which took place from April 7 to 9, 2023. I participated
+          in the App track, the goal was to create an app in 48 hours using any available generative AI.
+        </p>
+      </li>
+      <li>
+        <a href="blog/nefis-food" class="w-fit">Nefis Food</a><p>
+          Nefis Food is a company founded by my relatives that makes sugar, coffee and other products. They needed a
+          digital presence for their brand in the form of a website, and I helped them with that.
+        </p>
+      </li>
+    </ul>
+  </div>
+  <div>
+    <h2>Now</h2>
+    <p class="pl-6">
+      Currently, I work as a frontend developer at <a href="https://globerce.capital/en">Globerce Capital</a>, <br /> in
+      a team where we build a delivery management system <br /> for any business.
+    </p>
+  </div>
+  <div>
+    <h2>Contact</h2>
+    <ul>
+      <li><a href="https://twitter.com/khajimatov">Twitter</a></li>
+      <li><a href="https://github.com/khajimatov">GitHub</a></li>
+      <li><a href="https://read.cv/bkh">Read.cv</a></li>
+      <li><a href="mailto:me@bkh.kz">Email</a></li>
+    </ul>
+  </div>
+</BaseLayout>
 
 <style>
   h2 {
@@ -72,12 +63,5 @@ import "@fontsource/geist-mono";
   }
   ul {
     @apply pl-6;
-  }
-  a {
-    text-decoration: underline;
-    text-decoration-style: dotted;
-  }
-  li {
-    list-style: circle;
   }
 </style>
