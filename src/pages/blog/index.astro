@@ -5,11 +5,12 @@ import BaseLayout from "~/layouts/BaseLayout.astro";
 
 <BaseLayout>
   <span> <a href="/">bkh.kz</a> / blog</span>
+  <h1>Posts</h1>
   <main>
     <ul>
       {
         blogPosts.map((post) => (
-          <li class="list-decimal">
+          <li>
             <a href={post.slug}>{post.data.title}</a>
           </li>
         ))
