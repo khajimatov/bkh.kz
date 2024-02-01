@@ -12,8 +12,8 @@ const { Content } = await post.render();
 ---
 
 <BaseLayout>
-  <span> <a href="/">bkh.kz</a> / <a href="/blog">blog</a> / {post.data.title}</span>
-  <article class="prose">
+  <span> <a href="/">bkh.kz</a> / <a href="/blog/">blog</a> / {post.id}</span>
+  <article class="prose-sm">
     <Content />
   </article>
 </BaseLayout>
