@@ -2,6 +2,19 @@
 import BaseLayout from "~/layouts/BaseLayout.astro";
 ---
 
+<!-- <script is:inline>
+  const lang = navigator.language.slice(0, 2) || "ru";
+  if (lang !== "ru") {
+    const metaRefresh = document.createElement("meta");
+
+    metaRefresh.setAttribute("http-equiv", "refresh");
+
+    metaRefresh.setAttribute("content", `0; url=https://nefisfood.kz/${lang}/`);
+
+    document.head.appendChild(metaRefresh);
+  }
+</script> -->
+
 <BaseLayout>
   <div>
     <h1>Bkh</h1>
